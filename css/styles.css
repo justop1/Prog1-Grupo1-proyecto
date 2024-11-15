@@ -1,0 +1,66 @@
+body{
+    background-color:#DDD7C4;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+.cajaHeader{
+    display: flex;
+}
+
+.cajaLogo{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.cajaBuscador{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+
+.buscador{
+    width: 360%;
+    padding: 8px ;
+    border-radius: 4px;
+
+}
+
+
+
+.logoHeader{
+    width: 100px;
+
+}
+
+.cajaLinks{
+    width: 25%;
+    display: flex;
+
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links{
+    color: black;
+    text-decoration: none;
+    margin-right: 19px;
+}
+
+
+
+.cajaFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.integrantes{
+    margin-right: 19px;
+}
