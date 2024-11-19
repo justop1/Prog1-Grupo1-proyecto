@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header footer</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-<header class="cajaHeader">
+    <header class="cajaHeader">
 
-     <article class="cajaLogo">
-        <img src="./img/Logo TI.webp"  class="logoHeader" alt="">
-    </article>
-
-
-    <article class="cajaBuscador">
-        <form action="./index.html" method="get" class="formBuscador">
-            <input type="text"  name="buscador" class="buscador" placeholder="Ingrese algo">
-        </form>
-    </article>
-    
-   
-
-    <section class="cajaLinks">
-        <nav class="navBar">
-            <a class="links" href="">Home</a>
-            <a class="links" href="">Categoria</a>
-            <a class="links" href="">Login</a>
-            <a class="links" href="">Registro</a>
-        </nav>
-    </section>
+        <article class="cajaLogo">
+            <img src="./img/Logo TI.webp" class="logoHeader" alt="">
+        </article>
 
 
-</header>
+        <article class="cajaBuscador">
+            <form action="./index.html" method="get" class="formBuscador">
+                <input type="text" name="buscador" class="buscador" placeholder="Ingrese algo">
+            </form>
+        </article>
 
 
-<footer>
-    <section class="cajaFooter">
-        <p class="integrantes">Justo Presaras</p>
-        <p class="integrantes">Joaquin Sendon</p>
-        <p class="integrantes">Santiago Güerzoni</p>
-    </section>
-</footer>
+
+        <section class="cajaLinks">
+            <nav class="navBar">
+                <a class="links" href="">Home</a>
+                <a class="links" href="">Categoria</a>
+                <a class="links" href="">Login</a>
+                <a class="links" href="">Registro</a>
+            </nav>
+        </section>
 
 
-<script src="./js/index.js"></script>
-    
+    </header>
+
+
+    <footer>
+        <section class="cajaFooter">
+            <p class="integrantes">Justo Presaras</p>
+            <p class="integrantes">Joaquin Sendon</p>
+            <p class="integrantes">Santiago Güerzoni</p>
+        </section>
+    </footer>
+
+
+    <main>
+        <h1>Recetas Destacadas</h1>
+        <section class="listaRecetas"></section>
+        <button class="cargarMas">Cargar Más</button>
+    </main>
+
+
+
+    <script src="./js/index.js"></script>
+
 </body>
+
 </html>
