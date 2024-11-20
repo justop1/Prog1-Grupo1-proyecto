@@ -34,7 +34,7 @@ function cargarRecetas() {
                     <img class="imagenHome" src="${data.recipes[i].image}" alt="">
                     <h3>${data.recipes[i].name}</h3>
                     <p>Nivel de Dificultad: ${data.recipes[i].difficulty}</p>
-                    <a href="receta.html?id=${data.recipes[i].id}">Ver Detalle</a>
+                    <a href="category.html?id=${data.recipes[i].id}">Ver Detalle</a>
                 </article>`;
             }
 
