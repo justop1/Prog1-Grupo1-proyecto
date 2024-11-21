@@ -1,21 +1,21 @@
 
 let buscador = document.querySelector(".buscador");
 let formBuscador = document.querySelector(".formBuscador");
+let boton = document.querySelector('button');
+const listaRecetas = document.querySelector(".listaRecetas");
+const cargarMas = document.querySelector(".cargarMas");
+let offset = 0;
+const enlace = document.getElementById('verDetalle');
 
 formBuscador.addEventListener("submit", function () {
     if (buscador.value == "") {
         alert("El campo no puede estar vacío.");
-    }else if(buscador.value.length < 3) {
+    } else if (buscador.value.length < 3) {
         alert("El término buscado debe tener al menos 3 caracteres.");
-    }else{
+    } else {
         this.submit()
     }
 });
-
-
-const listaRecetas = document.querySelector(".listaRecetas");
-const cargarMas = document.querySelector(".cargarMas");
-let offset = 0;
 
 function cargarRecetas() {
     const url = `https://dummyjson.com/recipes?skip=${offset}&limit=10`;
@@ -34,11 +34,11 @@ function cargarRecetas() {
                     <img class="imagenHome" src="${data.recipes[i].image}" alt="">
                     <h3>${data.recipes[i].name}</h3>
                     <p>Nivel de Dificultad: ${data.recipes[i].difficulty}</p>
-                    <a href="category.html?id=${data.recipes[i].id}">Ver Detalle</a>
+                    <a href="category.html?id=${data.recipes[i].id}" id="verDetalle">Ver Detalle</a>
                 </article>`;
             }
 
-            listaRecetas.innerHTML += contenido; 
+            listaRecetas.innerHTML += contenido;
             offset += 10;
         })
         .catch(function (error) {
@@ -47,5 +47,19 @@ function cargarRecetas() {
 }
 
 cargarMas.addEventListener("click", cargarRecetas);
-
 cargarRecetas();
+
+
+boton.addEventListener('mouseover', function () {
+    this.style.color = '#ffffff';
+});
+boton.addEventListener("mouseout", function () {
+    this.style.color = "#000000";
+});
+
+enlace.addEventListener('mouseover', function () {
+    this.style.color = '#ffffff';
+});
+enlace.addEventListener("mouseout", function () {
+    this.style.color = '#000000';
+});
