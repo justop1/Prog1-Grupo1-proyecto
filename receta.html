@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Detalle de Receta</title>
-   <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Receta</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-   <header>
-       <h1>Detalle de Receta</h1>
-   </header>
-   <main>
-       <section class="detalleReceta">
-          
-       </section>
-   </main>
+
+    <header class="cajaHeader">
+
+        <article class="cajaLogo">
+            <img src="./img/Logo TI.webp" class="logoHeader" alt="">
+        </article>
 
 
-   <script src="./js/receta.js"></script>
+        <article class="cajaBuscador">
+            <form action="./index.html" method="get" class="formBuscador">
+                <input type="text" name="buscador" class="buscador" placeholder="Ingrese algo">
+            </form>
+        </article>
+
+        <section class="cajaLinks">
+            <nav class="navBar">
+                <ul class="listaLinks">
+                    <li><a class="links" href="./index.html">Home</a></li>
+                    <li><a class="links" href="./categories.html">Categoria</a></li>
+                    <li><a class="links" href="./login.html">Login</a></li>
+                    <li><a class="links" href="./register.html">Registro</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+
+    <header>
+        <h1>Detalle de Receta</h1>
+    </header>
+    <main>
+        <section class="detalleReceta">
+
+        </section>
+    </main>
+
+
+    <footer>
+        <section class="cajaFooter">
+            <p class="integrantes">Justo Presaras</p>
+            <p class="integrantes">Joaquin Sendon</p>
+            <p class="integrantes">Santiago Güerzoni</p>
+        </section>
+    </footer>
+
+
+    <script src="./js/receta.js"></script>
 </body>
+
 </html>
-
-
-

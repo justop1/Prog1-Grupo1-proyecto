@@ -24,7 +24,7 @@ if (recipeId) {
                     ${function () {
                     let categoriasHTML = "";
                     for (let i = 0; i < data.tags.length; i++) {
-                        categoriasHTML += `<a href="category.html?tag=${data.tags[i]}">${data.tags[i]}</a> `;
+                        categoriasHTML += `<a href="categories.html?tag=${data.tags[i]}">${data.tags[i]}</a> `;
                     }
                     return categoriasHTML;
                 }()}
