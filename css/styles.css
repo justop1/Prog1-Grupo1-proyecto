@@ -1,20 +1,20 @@
-body{
-    background-color:#DDD7C4;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    background-color: #DDD7C4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
 }
 
-.cajaHeader{
+.cajaHeader {
     display: flex;
 }
 
-.cajaLogo{
+.cajaLogo {
     width: 25%;
     display: flex;
     justify-content: center;
 }
 
-.cajaBuscador{
+.cajaBuscador {
     width: 50%;
     display: flex;
     align-items: center;
@@ -28,25 +28,25 @@ body{
     padding-block: 0px;
     padding-inline: 0px;
 }
-
 .formBuscador{
     width: 100%;
 }
 
 
 
-.logoHeader{
+.logoHeader {
     width: 100px;
 
 }
 
-.cajaLinks{
+.cajaLinks {
     width: 25%;
     display: flex;
     justify-content: center;
 
 }
-.navBar{
+
+.navBar {
     display: flex;
     align-items: center;
 }
@@ -56,7 +56,7 @@ body{
     list-style-type: none;
 }
 
-.links{
+.links {
     color: black;
     text-decoration: none;
     margin: 10px;
@@ -64,14 +64,14 @@ body{
 
 
 
-.cajaFooter{
+.cajaFooter {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: auto;
 }
 
-.integrantes{
+.integrantes {
     margin-right: 19px;
 }
 
@@ -113,19 +113,22 @@ body{
     height: 25px;
 }
 
-.imagenHome{
+.imagenHome {
     width: 100%;
 }
 
-.listaRecetas{
+.listaRecetas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 50px;
+
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
 }
 
-.articuloHome{
+.articuloHome {
     width: 18%;
     display: flex;
     flex-wrap: wrap;
@@ -134,4 +137,38 @@ body{
     align-items: center;
     padding: 20px 0px;
     margin: 30px 0px;
+}
+
+.contenedorBoton {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.cargarMas {
+    width: 12%;
+    padding: 15px 30px;
+    background-color: #bcb59b;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+#verDetalle{
+    text-decoration: none;
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    border-radius: 8px;
+    background-color: #bcb59b;
+}
+
+.tituloIndex{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 50px;
 }
