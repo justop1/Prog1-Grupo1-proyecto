@@ -4,7 +4,7 @@ let formBuscador = document.querySelector(".formBuscador");
 let boton = document.querySelector('button');
 const listaRecetas = document.querySelector(".listaRecetas");
 const cargarMas = document.querySelector(".cargarMas");
-let offset = 0;
+let numRecetas = 0;
 const enlace = document.getElementById('verDetalle');
 
 formBuscador.addEventListener("submit", function () {
@@ -18,7 +18,7 @@ formBuscador.addEventListener("submit", function () {
 });
 
 function cargarRecetas() {
-    const url = `https://dummyjson.com/recipes?skip=${offset}&limit=10`;
+    const url = `https://dummyjson.com/recipes?skip=${numRecetas}&limit=10`;
 
     fetch(url)
         .then(function (response) {
@@ -32,14 +32,14 @@ function cargarRecetas() {
                 console.log(data.recipes[i]);
                 contenido += `<article class="articuloHome" >
                     <img class="imagenHome" src="${data.recipes[i].image}" alt="">
-                    <h3>${data.recipes[i].name}</h3>
-                    <p>Nivel de Dificultad: ${data.recipes[i].difficulty}</p>
-                    <a href="category.html?id=${data.recipes[i].id}" id="verDetalle">Ver Detalle</a>
+                    <h3 class="tituloReceta" >${data.recipes[i].name}</h3>
+                    <p class="textoReceta" >Nivel de Dificultad: ${data.recipes[i].difficulty}</p>
+                    <a href="receta.html?id=${data.recipes[i].id}" id="verDetalle">Ver Detalle</a>
                 </article>`;
             }
 
             listaRecetas.innerHTML += contenido;
-            offset += 10;
+            numRecetas += 10;
         })
         .catch(function (error) {
             console.log("El error es: " + error);

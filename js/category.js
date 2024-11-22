@@ -1,5 +1,3 @@
-
-
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
 
