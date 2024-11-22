@@ -52,6 +52,8 @@ body {
 .listaLinks{
     display: flex;
     list-style-type: none;
+    padding: 0px;
+
 }
 
 .links {
@@ -180,4 +182,35 @@ body {
     height: 50px;
     margin: 0;
  }
+
+ @media (max-width:  420px) {
+    .cajaHeader{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cajaLogo {
+        width: 100%;
+    }
+    .cajaBuscador {
+        width: 100%;
+    }
+    .cajaLinks{
+        width: 100%;
+    }
+    .articuloHome {
+        width: 100%;
+    }
+
+
+    .listaRecetas {
+        flex-direction: column;
+    }
+    .tituloIndex {
+        padding: 0px;
+    }
+    .cargarMas {
+        width: 50%;
+    }
+}
+
  
