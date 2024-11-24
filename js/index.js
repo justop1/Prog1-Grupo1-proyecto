@@ -1,21 +1,10 @@
-
-let buscador = document.querySelector(".buscador");
-let formBuscador = document.querySelector(".formBuscador");
 let boton = document.querySelector('button');
 const listaRecetas = document.querySelector(".listaRecetas");
 const cargarMas = document.querySelector(".cargarMas");
 let numRecetas = 0;
 const enlace = document.getElementById('verDetalle');
 
-formBuscador.addEventListener("submit", function () {
-    if (buscador.value == "") {
-        alert("El campo no puede estar vacío.");
-    } else if (buscador.value.length < 3) {
-        alert("El término buscado debe tener al menos 3 caracteres.");
-    } else {
-        this.submit()
-    }
-});
+
 
 function cargarRecetas() {
     const url = `https://dummyjson.com/recipes?skip=${numRecetas}&limit=10`;
