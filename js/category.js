@@ -1,34 +1,35 @@
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
+let idCategoria = qsObj.get("categoria");
+console.log(idCategoria); 
 
-
-const id = qsObj.get('id');
-console.log(id);
 
 const nombreCategoriaElemento = document.querySelector (".nombreCategoria");
 const contenedorRecetas = document.querySelector(".contenedorRecetas");
-const urlBase = "https://dummyjson.com/recipes/";
+const url = `https://dummyjson.com/recipes/tag/${idCategoria}`;
 
 
-if (id){
-
-    const url = `${urlBase}${id}`;
-    console.log(url);
-
+function cargarRecetas(url) {
     fetch(url)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {            
-           let contenido = `
-              <div class="recipe">
-                    <h2 class="nombreCategoria"> ${data.cuisine}</h2>
-                    <img src="${data.image}" alt="${data.name}" class="imagenCategory">
-                    <h2 class="tituloCategoria">${data.name}</h2>
-                    <p>Dificultad: ${data.difficulty}</p>
-              </div> `;
-            contenedorRecetas.innerHTML = contenido;
-        });
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data){
+        nombreCategoriaElemento.innerHTML = `Categoria seleccionada: ${idCategoria}`
+
+        let contenido = "";
+        for (let i = 0; i < data.recipes.length; i++) {
+            console.log(data.recipes[i]);
+            contenido += `<article class="articuloHome" >
+                <img class="imagenHome" src="${data.recipes[i].image}" alt="">
+                <h3 class="tituloReceta" >${data.recipes[i].name}</h3>
+                <p class="textoReceta">Dificultad: ${data.recipes[i].difficulty}</p>
+                <a href="receta.html?id=${data.recipes[i].id}" id="verDetalle">Ver Detalle</a>
+            </article>`;
+        }
+        contenedorRecetas.innerHTML = contenido;
+    })
 }
 
+cargarRecetas(url);
 
