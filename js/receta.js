@@ -23,14 +23,14 @@ if (recipeId) {
            recetaDetalle.innerHTML = `
               <article>
                   <h2>${data.name}</h2>
-                  <img src="${data.image}" alt="">
+                  <img class="imgReceta" src="${data.image}" alt="">
                   <p><strong>Instrucciones:</strong> ${data.instructions}</p>
                   <p><strong>Tiempo de cocción:</strong> ${data.cookTimeMinutes} minutos</p>
                   <p><strong>Categorías:</strong></p><div>
                    ${function () {
                    let categoriasHTML = "";
                    for (let i = 0; i < data.tags.length; i++) {
-                       categoriasHTML += `<a href="categories.html?tag=${data.tags[i]}">${data.tags[i]}</a> `;
+                       categoriasHTML += `<a href="category.html?categoria=${data.tags[i]}">${data.tags[i]}</a> `;
                    }
                    return categoriasHTML;
                }()}

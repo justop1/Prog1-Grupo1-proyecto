@@ -27,7 +27,7 @@ function mostrarEtiquetas(tags) {
 
  for (let i = numTags; i < numTags + 10 && i < tags.length; i++) {
    contenido += `<section class="sectionCategories">
-   <article class="articleCategories"> <a href="category.html?categoria=${tags[i]}">${tags[i]}</a></article>
+   <article class="articleCategories"> <a class="linksCate" href="category.html?categoria=${tags[i]}">${tags[i]}</a></article>
 </section>`;
  }
 
