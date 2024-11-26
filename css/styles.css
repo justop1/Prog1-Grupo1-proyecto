@@ -101,7 +101,11 @@ body {
  
  .form {
     padding: 80px;
-    background-color: rgb(255, 115, 115);
+
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: fixed;
+   border: solid 3px black ;
     margin-top: 5%;
  
  
@@ -112,6 +116,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 30px;
  }
  
  
@@ -191,7 +196,7 @@ body {
     align-items: center;
     color: #000000;
     border-radius: 8px;
-    background-color: #bcb59b;
+    background-color: #e1dbc8;
  }
  
  
@@ -219,8 +224,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 50px;
+    justify-content: space-around;
  }
  
  
@@ -230,9 +234,17 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
-    margin: 30px 35px;
  } 
+ .sectionCategories{
+   width: 20%;
+   justify-content: center;
+   display: flex;
+   background-color: rgba(245, 245, 220, 0.638);
+   height: 8vw;
+   margin: 16px;
+   border-radius: 10px;
+   border: 1px solid black;
+ }
 
  .contenedorRecetas {
    display: flex;
@@ -251,7 +263,7 @@ body {
  .linksCate {
    color: black;
    text-decoration: none;
-   border-radius: 10px;
+   font-size: 17px;
  }
 
  .cargar {
@@ -294,6 +306,14 @@ body {
     }
     .cargarMas {
         width: 50%;
+    }
+    .sectionCategories{
+      width: 100%;
+      height: 25vw;
+    }
+    .ingresar{
+      height: 9vh;
+      width: 25vw;
     }
 }
 
