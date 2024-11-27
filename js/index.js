@@ -45,10 +45,3 @@ boton.addEventListener('mouseover', function () {
 boton.addEventListener("mouseout", function () {
     this.style.color = "#000000";
 });
-
-enlace.addEventListener('mouseover', function () {
-    this.style.color = '#ffffff';
-});
-enlace.addEventListener("mouseout", function () {
-    this.style.color = '#000000';
-});

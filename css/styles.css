@@ -121,9 +121,9 @@ body {
  
  
  .ingresar {
-    background-color: rgb(0, 72, 255);
-    color: white;
+    background-color: #bcb59b;
     border-radius: 10px;
+    border: none;
     height: 4vh;
     width: 9vw;
     margin: 5px;
@@ -151,7 +151,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-left: 50px;
     padding-bottom: 50px;
     padding-right: 50px;
@@ -278,6 +278,12 @@ body {
  .inicio .cajaHeader {
    justify-content: center;
  }
+
+.nombreCategorias{
+
+   color: black;
+}
+
  @media (max-width:  420px) {
     .cajaHeader{
         justify-content: center;
@@ -296,8 +302,6 @@ body {
     .articuloHome {
         width: 100%;
     }
-
-
     .listaRecetas {
         flex-direction: column;
     }
@@ -315,5 +319,7 @@ body {
       height: 9vh;
       width: 25vw;
     }
+    .integrantes{
+      text-align: center;
+    }
 }
-

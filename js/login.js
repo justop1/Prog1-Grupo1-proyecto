@@ -1,6 +1,7 @@
 let email = document.querySelector("#email");
 let formLogin = document.querySelector(".formLogin");
 let clave = document.querySelector("#contrasennia");
+let boton = document.querySelector('button');
 
 formLogin.addEventListener("submit", function (event) {
   
@@ -15,3 +16,10 @@ formLogin.addEventListener("submit", function (event) {
    
 });
 
+
+boton.addEventListener('mouseover', function () {
+    this.style.color = '#ffffff';
+});
+boton.addEventListener("mouseout", function () {
+    this.style.color = "#000000";
+});

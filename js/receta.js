@@ -1,8 +1,4 @@
 const recetaDetalle = document.querySelector(".detalleReceta");
-
-
-
-
 const params = new URLSearchParams(window.location.search);
 const recipeId = params.get("id");
 
@@ -30,7 +26,7 @@ if (recipeId) {
                    ${function () {
                    let categoriasHTML = "";
                    for (let i = 0; i < data.tags.length; i++) {
-                       categoriasHTML += `<a href="category.html?categoria=${data.tags[i]}">${data.tags[i]}</a> `;
+                       categoriasHTML += `<a class="nombreCategorias" href="category.html?categoria=${data.tags[i]}">${data.tags[i]}</a> `;
                    }
                    return categoriasHTML;
                }()}
@@ -46,14 +42,3 @@ if (recipeId) {
 } else {
    recetaDetalle.innerHTML = `<p>No se encontró el ID de la receta en la URL.</p>`;
 }
-
-
-
-
-
-
-
-
-
-
-

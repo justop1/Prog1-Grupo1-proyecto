@@ -32,4 +32,3 @@ function cargarRecetas(url) {
 }
 
 cargarRecetas(url);
-

@@ -62,4 +62,3 @@ boton.addEventListener('mouseover', function () {
 boton.addEventListener("mouseout", function () {
    this.style.color = "#000000";
 });
-
