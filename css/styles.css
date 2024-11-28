@@ -2,11 +2,14 @@ body {
    background-color: #DDD7C4;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    height: 100vh;
+   background-image: url(../img/istockphoto-1210441991-612x612.jpg);
+   margin: 0;
 }
 
 
 .cajaHeader {
    display: flex;
+   background-color: rgb(220, 216, 195);
 }
 
 
@@ -14,6 +17,7 @@ body {
    width: 25%;
    display: flex;
    justify-content: center;
+
 }
 
 
@@ -21,6 +25,7 @@ body {
    width: 50%;
    display: flex;
    align-items: center;
+
 }
 
 
@@ -50,7 +55,6 @@ body {
    width: 25%;
    display: flex;
    justify-content: center;
-
 
 }
 
@@ -104,14 +108,15 @@ body {
    padding: 80px;
    background-size: 100%;
    border: solid 3px black;
-   border-radius: 10px;
+   border-radius: 20px;
    margin-top: 5%;
-   background-color: rgba(245, 245, 220, 0.638);
+   background-color: rgb(245 245 220);
 
 }
 
 .obligatorio {
    color: red;
+   margin: 0;
 }
 
 .obligatorio2 {
@@ -152,6 +157,7 @@ body {
 
 .imagenHome {
    width: 100%;
+   border-radius: 20px;
 }
 
 
@@ -175,6 +181,8 @@ body {
    align-items: center;
    padding: 20px 0px;
    margin: 30px 0px;
+   background-color: rgb(245 245 220);
+   border-radius: 20px;
 }
 
 
@@ -203,11 +211,9 @@ body {
    justify-content: center;
    align-items: center;
    color: #000000;
-   border-radius: 8px;
-
    border-radius: 10px;
    border: 1px solid black;
-   background-color: rgba(245, 245, 220, 0.638);
+   background-color: #bcb59b;
 }
 
 
@@ -215,8 +221,17 @@ body {
    justify-content: center;
    align-items: center;
    display: flex;
-   padding-top: 50px;
+   margin-top: 50px;
+
+
 }
+
+.cajatituloIndex {
+   border-radius: 20px;
+   background-color: rgb(245 245 220);
+   text-align: center;
+}
+
 
 
 .tituloReceta {
@@ -252,7 +267,7 @@ body {
    width: 20%;
    justify-content: center;
    display: flex;
-   background-color: rgba(245, 245, 220, 0.638);
+   background-color: rgb(245 245 220);
    height: 8vw;
    margin: 16px;
    border-radius: 10px;
@@ -271,7 +286,7 @@ body {
 
 .imgReceta {
    width: 250px;
-   border-radius: 10px;
+   border-radius: 20px;
 }
 
 .linksCate {
@@ -308,7 +323,7 @@ body {
    display: flex;
    flex-direction: row;
    width: 70%;
-   background-color: rgba(245, 245, 220, 0.638);
+   background-color: rgb(245 245 220);
    border-radius: 20px;
 }
 
@@ -379,7 +394,7 @@ body {
 
    .receta1 {
       flex-wrap: wrap;
-    justify-content: center;
+      justify-content: center;
    }
 
    .imagenR {
