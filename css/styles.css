@@ -1,241 +1,254 @@
 body {
-    background-color: #DDD7C4;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 100vh;
- }
- 
- 
- .cajaHeader {
-    display: flex;
- }
- 
- 
- .cajaLogo {
-    width: 25%;
-    display: flex;
-    justify-content: center;
- }
- 
- 
- .cajaBuscador {
-    width: 50%;
-    display: flex;
-    align-items: center;
- }
- 
- 
- 
- 
- .buscador{
-    width: 100%;
-    height: 35px;
-    border-radius: 9px;
-    padding-block: 0px;
-    padding-inline: 0px;
- }
- .formBuscador{
-    width: 100%;
- }
- 
- 
- 
- 
- .logoHeader {
-    width: 100px;
- }
- 
- 
- .cajaLinks {
-    width: 25%;
-    display: flex;
-    justify-content: center;
- 
- 
- }
- 
- 
- .navBar {
-    display: flex;
-    align-items: center;
- }
- 
- 
- .listaLinks{
-    display: flex;
-    list-style-type: none;
-    padding: 0px;
- }
- 
- 
- .links {
-    color: black;
-    text-decoration: none;
-    margin: 10px;
-    
- }
- 
- 
- 
- 
- 
- 
- .cajaFooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
- }
- 
- 
- .integrantes {
-    margin-right: 19px;
- }
- 
- 
- /* FORMULARIOS */
- .formulario {
-    display: flex;
-    justify-content: center;
- }
- 
- 
- .form {
-    padding: 80px;
+   background-color: #DDD7C4;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   height: 100vh;
+}
 
-   background-repeat: no-repeat;
+
+.cajaHeader {
+   display: flex;
+}
+
+
+.cajaLogo {
+   width: 25%;
+   display: flex;
+   justify-content: center;
+}
+
+
+.cajaBuscador {
+   width: 50%;
+   display: flex;
+   align-items: center;
+}
+
+
+
+
+.buscador {
+   width: 100%;
+   height: 35px;
+   border-radius: 9px;
+   padding-block: 0px;
+   padding-inline: 0px;
+}
+
+.formBuscador {
+   width: 100%;
+}
+
+
+
+
+.logoHeader {
+   width: 100px;
+}
+
+
+.cajaLinks {
+   width: 25%;
+   display: flex;
+   justify-content: center;
+
+
+}
+
+
+.navBar {
+   display: flex;
+   align-items: center;
+}
+
+
+.listaLinks {
+   display: flex;
+   list-style-type: none;
+   padding: 0px;
+}
+
+
+.links {
+   color: black;
+   text-decoration: none;
+   margin: 10px;
+
+}
+
+
+
+
+
+
+.cajaFooter {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: auto;
+}
+
+
+.integrantes {
+   margin-right: 19px;
+}
+
+
+/* FORMULARIOS */
+.formulario {
+   display: flex;
+   justify-content: center;
+}
+
+
+.form {
+   padding: 80px;
    background-size: 100%;
-   background-position: fixed;
-   border: solid 3px black ;
-    margin-top: 5%;
- 
- 
- }
- 
- 
- .cajaboton {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
- }
- 
- 
- .ingresar {
-    background-color: #bcb59b;
-    border-radius: 10px;
-    border: none;
-    height: 4vh;
-    width: 9vw;
-    margin: 5px;
- }
- 
- 
- #email {
-    width: 100%;
-    height: 25px;
- }
- 
- 
- #contrasennia {
-    width: 100%;
-    height: 25px;
- }
- 
- 
- .imagenHome {
-    width: 100%;
- }
- 
- 
- .listaRecetas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    padding-right: 50px;
- }
- 
- 
- .articuloHome {
-    width: 18%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0px;
-    margin: 30px 0px;
- }
- 
- 
- .contenedorBoton {
-    justify-content: center;
-    display: flex;
-    align-items: center;
- }
- 
- 
- .cargarMas {
-    width: 12%;
-    padding: 15px 30px;
-    background-color: #bcb59b;
-    color: #000000;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
- }
- 
- 
- #verDetalle{
-    text-decoration: none;
-    display: flex;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-    color: #000000;
-    border-radius: 8px;
-    background-color: #e1dbc8;
- }
- 
- 
- .tituloIndex{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding-top: 50px;
- }
- 
- 
- .tituloReceta{
-    margin: 0;
-    height: 80px;
- }
- .textoReceta{
-    height: 50px;
-    margin: 0;
- }
- 
- 
- 
- 
- .listaTags{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
- }
- 
- 
- .articleCategories{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
- } 
- .sectionCategories{
+   border: solid 3px black;
+   border-radius: 10px;
+   margin-top: 5%;
+   background-color: rgba(245, 245, 220, 0.638);
+
+}
+
+.obligatorio {
+   color: red;
+}
+
+.obligatorio2 {
+   color: red;
+}
+
+
+
+.cajaboton {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 30px;
+}
+
+
+.ingresar {
+   background-color: #bcb59b;
+   border-radius: 10px;
+   border: none;
+   height: 4vh;
+   width: 9vw;
+   margin: 5px;
+}
+
+
+#email {
+   width: 100%;
+   height: 25px;
+}
+
+
+#contrasennia {
+   width: 100%;
+   height: 25px;
+}
+
+
+.imagenHome {
+   width: 100%;
+}
+
+
+.listaRecetas {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   padding-left: 50px;
+   padding-bottom: 50px;
+   padding-right: 50px;
+}
+
+
+.articuloHome {
+   width: 18%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0px;
+   margin: 30px 0px;
+}
+
+
+.contenedorBoton {
+   justify-content: center;
+   display: flex;
+   align-items: center;
+}
+
+
+.cargarMas {
+   width: 12%;
+   padding: 15px 30px;
+   background-color: #bcb59b;
+   color: #000000;
+   border: none;
+   border-radius: 8px;
+   font-size: 18px;
+}
+
+
+#verDetalle {
+   text-decoration: none;
+   display: flex;
+   width: 40%;
+   justify-content: center;
+   align-items: center;
+   color: #000000;
+   border-radius: 8px;
+
+   border-radius: 10px;
+   border: 1px solid black;
+   background-color: rgba(245, 245, 220, 0.638);
+}
+
+
+.tituloIndex {
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   padding-top: 50px;
+}
+
+
+.tituloReceta {
+   margin: 0;
+   height: 80px;
+}
+
+.textoReceta {
+   height: 50px;
+   margin: 0;
+}
+
+
+
+
+.listaTags {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+
+.articleCategories {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.sectionCategories {
    width: 20%;
    justify-content: center;
    display: flex;
@@ -244,9 +257,9 @@ body {
    margin: 16px;
    border-radius: 10px;
    border: 1px solid black;
- }
+}
 
- .contenedorRecetas {
+.contenedorRecetas {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -254,72 +267,126 @@ body {
    padding-left: 50px;
    padding-bottom: 50px;
    padding-right: 50px;
- }
+}
 
- .imgReceta {
-   width: 200px;
- }
+.imgReceta {
+   width: 250px;
+   border-radius: 10px;
+}
 
- .linksCate {
+.linksCate {
    color: black;
    text-decoration: none;
    font-size: 17px;
- }
+}
 
- .cargar {
+.cargar {
    display: flex;
    justify-content: center;
- }
+}
 
- .tituloCate {
+.tituloCate {
    text-align: center;
- }
+}
 
- .inicio .cajaHeader {
+.inicio .cajaHeader {
    justify-content: center;
- }
+}
 
-.nombreCategorias{
+.nombreCategorias {
 
    color: black;
 }
 
- @media (max-width:  420px) {
-    .cajaHeader{
-        justify-content: center;
-        flex-direction: column;
-    }
-    .cajaLogo {
-        width: 100%;
-    }
-    .cajaBuscador {
+.detalleReceta {
+   display: flex;
+   justify-content: center;
+}
 
-        display: none;
-    }
-    .cajaLinks{
-        width: 100%;
-    }
-    .articuloHome {
-        width: 100%;
-    }
-    .listaRecetas {
-        flex-direction: column;
-    }
-    .tituloIndex {
-        padding: 0px;
-    }
-    .cargarMas {
-        width: 50%;
-    }
-    .sectionCategories{
+.receta1 {
+
+   display: flex;
+   flex-direction: row;
+   width: 70%;
+   background-color: rgba(245, 245, 220, 0.638);
+   border-radius: 20px;
+}
+
+.imagenR {
+   display: flex;
+   width: 50%;
+   justify-content: center;
+   align-items: center;
+}
+
+.infoR {
+   width: 50%;
+   padding: 10px;
+}
+
+.titReceta {
+   text-align: center;
+}
+
+@media (max-width: 420px) {
+   .cajaHeader {
+      justify-content: center;
+      flex-direction: column;
+   }
+
+   .cajaLogo {
+      width: 100%;
+   }
+
+   .cajaBuscador {
+
+      display: none;
+   }
+
+   .cajaLinks {
+      width: 100%;
+   }
+
+   .articuloHome {
+      width: 100%;
+   }
+
+   .listaRecetas {
+      flex-direction: column;
+   }
+
+   .tituloIndex {
+      padding: 0px;
+   }
+
+   .cargarMas {
+      width: 50%;
+   }
+
+   .sectionCategories {
       width: 100%;
       height: 25vw;
-    }
-    .ingresar{
+   }
+
+   .ingresar {
       height: 9vh;
       width: 25vw;
-    }
-    .integrantes{
+   }
+
+   .integrantes {
       text-align: center;
-    }
+   }
+
+   .receta1 {
+      flex-wrap: wrap;
+    justify-content: center;
+   }
+
+   .imagenR {
+      padding: 10px;
+   }
+
+   .infoR {
+      width: 262.797px;
+   }
 }
