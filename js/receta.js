@@ -1,5 +1,6 @@
+let qs = location.search;
 const recetaDetalle = document.querySelector(".detalleReceta");
-const params = new URLSearchParams(window.location.search);
+const params = new URLSearchParams(qs);
 const recipeId = params.get("id");
 
 

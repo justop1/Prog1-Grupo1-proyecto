@@ -25,7 +25,7 @@ function mostrarEtiquetas(tags) {
  let contenido = "";
 
 
- for (let i = numTags; i < numTags + 10 && i < tags.length; i++) {
+ for (let i = numTags; i < numTags + 20 && i < tags.length; i++) {
    contenido += `<section class="sectionCategories">
    <article class="articleCategories"> <a class="linksCate" href="category.html?categoria=${tags[i]}">${tags[i]}</a></article>
 </section>`;
@@ -47,7 +47,10 @@ cargarMas.addEventListener("click", function () {
    })
    .then(function (tags) {
      mostrarEtiquetas(tags);
-   });
+   })
+   .catch(function (error) {
+    console.log("El error es: " + error);
+});
 });
 
 

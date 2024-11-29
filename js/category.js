@@ -29,6 +29,9 @@ function cargarRecetas(url) {
         }
         contenedorRecetas.innerHTML = contenido;
     })
+    .catch(function (error) {
+        console.log("El error es: " + error);
+    });
 }
 
 cargarRecetas(url);
