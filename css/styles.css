@@ -44,7 +44,9 @@ body {
    width: 100%;
 }
 
-
+.obligatorio3{
+   color: red;
+}
 
 
 .logoHeader {
