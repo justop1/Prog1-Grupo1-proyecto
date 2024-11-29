@@ -375,6 +375,7 @@ height: 10%;
    .cajaHeader {
       justify-content: center;
       flex-direction: column;
+      height: 50%;
    }
 
    .cajaLogo {
@@ -437,4 +438,5 @@ height: 10%;
    .bodyFooter{
       height:15%;
    }
+
 }
